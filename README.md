@@ -166,6 +166,16 @@ https://jwt.io/
 
 https://echarts.baidu.com/
 
+### Some problems I met
+`$message（Property '$message' does not exist on type ...）`
+```js
+(this as any).$message({
+    type: 'success',
+    message: '已收藏'
+})
+```
+reference:https://www.jianshu.com/p/286ceb8e866b
+
 ## Screenshort
 
 Just show parts of them.

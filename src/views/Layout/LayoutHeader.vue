@@ -40,10 +40,10 @@ export default class LayoutHeader extends Vue {
   userCommand(command:string): void{
     if(command == "logout"){
       localStorage.removeItem("tsToken");
-      this.$router.replace("/login");
+      (this as any).$router.replace("/login");
     }
     if(command == "usercenter"){
-      this.$router.push('/user')
+      (this as any).$router.push('/user')
     }
   }
   created(){

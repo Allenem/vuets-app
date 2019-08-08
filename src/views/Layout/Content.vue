@@ -42,7 +42,7 @@ export default class Content extends Vue {
   }
 
   created(){
-    this.initBreadCrumbItems(this.$route);
+    this.initBreadCrumbItems((this as any).$route);
   }
 
   initBreadCrumbItems(router:any){

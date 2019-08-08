@@ -73,7 +73,7 @@ export default class FormData extends Vue {
         (this as any).$axios.post(`/api/profiles/add`,this.form)
           .then((res:any)=>{
             // console.log(res.data);
-            this.$message({
+            (this as any).$message({
               message:res.data.msg,
               type:"success"
             });

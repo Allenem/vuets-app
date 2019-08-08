@@ -83,7 +83,7 @@ export default class EditDialog extends Vue {
           .then((res:any)=>{
             console.log(res.data);
             this.$emit("closeDialog");
-            this.$message({
+            (this as any).$message({
               message:res.data.msg,
               type:"success"
             })

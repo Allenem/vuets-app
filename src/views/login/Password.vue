@@ -79,11 +79,11 @@ export default class Password extends Vue {
           .then((res:any) => {
             this.loading = false;
             // console.log(res.data);
-            this.$message({
+            (this as any).$message({
               message: res.data.msg,
               type: "success"
             });
-            this.$router.push("/login");
+            (this as any).$router.push("/login");
           })
           .catch((err:any) => {
             this.loading = false;

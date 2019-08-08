@@ -16,7 +16,8 @@
 
 <script lang='ts'>
 import {Component,Vue,Provide} from 'vue-property-decorator' // inport decorator
-import Charts from '@/components/Charts.vue'
+import Charts from '../../components/Charts.vue'
+// import Charts from '@/components/Charts.vue'
 @Component({
   components:{Charts}
 })

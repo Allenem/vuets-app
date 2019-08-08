@@ -99,7 +99,7 @@ export default class Login extends Vue {
             // 存储到vuex中
             this.setUser(res.data.token);
             // 登陆成功，跳转到首页
-            this.$router.push('/');
+            (this as any).$router.push('/');
           })
           .catch(()=>{
             this.isLogin = false;

@@ -122,27 +122,27 @@ export default class TableData extends Vue {
 
   handleDelete(index:number,row:any){
     // console.log(row._id);
-    this.$confirm('此操作将永久删除该条数据, 是否继续?', '提示', {
+    (this as any).$confirm('此操作将永久删除该条数据, 是否继续?', '提示', {
       confirmButtonText: '确定',
       cancelButtonText: '取消',
       type: 'warning'
     }).then(() => {
       (this as any).$axios.delete(`/api/profiles/delete/${row._id}`)
       .then((res:any)=>{
-          this.$message({
+          (this as any).$message({
             message:res.data.msg,
             type:"success"
           });
           this.tableData.splice(index,1);
       })
       .catch((err:any)=>{
-        this.$message({
+        (this as any).$message({
           message:`"${row.describe}"删除失败!`,
           type:'warning'
         });
       });
     }).catch(() => {
-      this.$message({
+      (this as any).$message({
         type: 'info',
         message: '已取消删除'
       });          
