@@ -175,7 +175,7 @@ export default class AccountData extends Vue {
 
 <style lang="scss" scoped>
 .account-data{
-  height: 100%;
+  height: calc(100% - 55px);
   overflow: auto;
   .add-box{
     margin-bottom: 10px;
