@@ -116,8 +116,8 @@ export const asyncRouterMap = [
 ]
 
 const router:any = new Router({
-  mode: 'hash',
-  // mode: 'history', // build时路径会出错
+  // mode: 'hash',
+  mode: 'history', // build时路径会出错
   base: process.env.BASE_URL,
   routes: asyncRouterMap
 })

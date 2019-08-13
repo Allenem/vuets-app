@@ -15,7 +15,8 @@ module.exports = {
     proxy: {
       // 配置跨域
       '/api':{
-        target: 'https://vuets-api.herokuapp.com/api/',
+        // target: 'https://vuets-api.herokuapp.com/api/', // 线上测试
+        target: 'http://localhost:5001/api/', // 本地测试
         ws: true,
         changeOrigin: true,
         pathRewrite: {

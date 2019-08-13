@@ -37,6 +37,9 @@ service.interceptors.response.use(
     let errMsg = '';
     if (err && err.response.status) {
       switch(err.response.status) {
+        case 400: 
+          errMsg = err.response.data.msg ? err.response.data.msg : err.response.data;
+          break;
         case 401:
           errMsg = '登录状态失效，请重新登录';
           localStorage.removeItem('tsToken');

@@ -2,21 +2,25 @@
 
 ## Quick Start
 
+If you want to use local server, you can do this:
+```bash
+# Install client dependencies
+npm install
+
+# Install server dependencies
+npm run api-install
+
+# Compiles and start client & local server simultaneously
+npm run dev
+```
+
+If you want to use remote server, you can change `target` of vue.config.js and do this:
 ```bash
 # Project setup
 npm install
 
 # Compiles and hot-reloads for development
 npm run serve
-
-# Compiles and minifies for production
-npm run build
-
-# Run your tests
-npm run test
-
-# Lints and fixes files
-npm run lint
 ```
 
 ## Introduction
@@ -153,7 +157,8 @@ npm i element-ui -S
 npm i axios @types/axios -S
 npm i vuex-class -S
 npm i jwt-decode @types/jwt-decode -S
-cnpm i echarts @types/echarts -S
+npm i echarts @types/echarts -S
+npm i concurrently -S
 ```
 
 ### Username & Password

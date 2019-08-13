@@ -81,7 +81,7 @@ export default class AccountData extends Vue {
       des:"Super Administrator. Have access to view all pages!"
     },
     {
-      key:"edit",
+      key:"editor",
       role:"客服",
       des:"Normal Editor. Can see all pages except permission page!"
     },
